@@ -8,6 +8,7 @@ body {
     height: 100vh;
     display: grid;  
     grid-template-rows: auto 1fr;
+    background-color: black;
 }
 
 header {
@@ -18,3 +19,20 @@ header {
     text-align: center;
     letter-spacing: .5vmin;
 }
+ 
+.cell {
+    height: 25vmin;
+    width: 25vmin;
+    box-shadow: 0 magenta;
+    border: .5vh solid magenta;
+    line-height: 50vmin;
+    font-size: medium;    
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 25vmin;
+    margin: 10vmin auto;
+}
+
