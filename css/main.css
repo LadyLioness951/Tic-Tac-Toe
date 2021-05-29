@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;  
+    grid-template-rows: auto 1fr;
+}
+
+header {
+    font-size: 6vmin;
+    padding: 2vmin;
+    background-color: blue;
+    color: magenta;
+    text-align: center;
+    letter-spacing: .5vmin;
+}
