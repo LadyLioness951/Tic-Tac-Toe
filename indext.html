@@ -11,17 +11,21 @@
 <body>
     <header>Megan's TIC TAC TOE</header>
     <main>
-        <div id="grid">
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-        </div>
+        <section>
+            <div id="grid">
+                <div data-cell="1" class="cell"></div>
+                <div data-cell="2" class="cell"></div>
+                <div data-cell="3" class="cell"></div>
+                <div data-cell="4" class="cell"></div>
+                <div data-cell="5" class="cell"></div>
+                <div data-cell="6" class="cell"></div>
+                <div data-cell="7" class="cell"></div>
+                <div data-cell="8" class="cell"></div>
+                <div data-cell="9" class="cell"></div>
+            </div>
+            <h2 id="game-status"></h2>
+        </section>
+        <button id="replay">Play Again</button>
     </main>
 </body>
 </html>

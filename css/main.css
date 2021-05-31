@@ -26,13 +26,13 @@ header {
     box-shadow: 0 magenta;
     border: .5vh solid magenta;
     line-height: 50vmin;
-    font-size: medium;    
+    font-size: medium; 
 }
 
 #grid {
     display: grid;
     grid-template-columns: repeat(3, auto);
-    width: 25vmin;
-    margin: 10vmin auto;
+    width: 75vmin;
+    margin: 12vmin auto;
 }
 
