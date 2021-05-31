@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    
 }
 
 body {
@@ -20,11 +21,18 @@ header {
     letter-spacing: .5vmin;
 }
  
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .cell {
     height: 25vmin;
     width: 25vmin;
     box-shadow: 0 magenta;
-    border: .5vh solid magenta;
+    border: .5vmin solid magenta;
     line-height: 50vmin;
     font-size: medium; 
 }
@@ -36,3 +44,26 @@ header {
     margin: 12vmin auto;
 }
 
+#msg {
+    font-size: 5vmin;
+    color: blue;
+    text-align: center;
+}
+
+#replay {
+    font-size: 2vmin;
+    font-weight: bold;
+    padding: 2vmin;
+    margin-top: 4vmin;
+    border: .3vmin solid blue;
+    background-color: black;
+    color: magenta;
+    border-radius: 2vmin;
+    outline: none;
+    cursor: pointer;
+}
+
+#replay:hover {
+    background-color: mediumvioletred;
+    color:navy;
+}

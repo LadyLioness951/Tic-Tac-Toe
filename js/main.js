@@ -20,6 +20,7 @@ const gridEl = document.getElementById("grid");
 const buttonEl = document.getElementById("replay");
 const gameStatusEl = document.getElementById("game-status");
 const numberCells = document.getElementsByClassName("cell");
+const msgEl = document.getElementById("msg");
 
 /*----- event listeners -----*/
 document.getElementsByClassName("cell").addEventListener("click", handleCellClick);
@@ -36,6 +37,23 @@ function init() {
 
 function render () {
 
+    buttonEl.style.visibility = gameStatus ? "visible" : "hidden";
+
+
+    renderButtons();
+    renderMessage();
+}
+
+function renderMessage() {
+    if(gameStatus === "win") {
+        msgEl.innerText = "You Win!";
+    } else if(gameStatus === "lose") {
+        msgEl.innerText = "Loser";
+    } else if(gameStatus === "tie") {
+        msgEl.innerText = "Cats Game";
+    } else {
+        msgEl.innerText = "Good Luck!";
+    }
 }
 
 function handleCellClick(evt) {
