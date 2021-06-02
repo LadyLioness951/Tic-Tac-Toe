@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
     
 }
 
@@ -14,7 +14,7 @@ body {
 
 header {
     font-size: 6vmin;
-    padding: 2vmin;
+    padding: 1vmin;
     background-color: blue;
     color: magenta;
     text-align: center;
@@ -29,20 +29,20 @@ main {
 }
 
 .cell {
-    height: 25vmin;
-    width: 25vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: 0 magenta;
     border: .5vmin solid magenta;
-    line-height: 50vmin;
-    font-size: medium; 
+    font-size: 10vmin; 
+    color: blue;
 }
 
-#grid {
+section {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    width: 75vmin;
-    margin: 12vmin auto;
-}
+    grid-template-columns: 20vmin 20vmin 20vmin;
+    grid-template-rows: 20vmin 20vmin 20vmin;
+  }
 
 #msg {
     font-size: 5vmin;
